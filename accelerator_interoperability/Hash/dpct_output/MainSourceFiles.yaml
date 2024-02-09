@@ -1,0 +1,289 @@
+---
+MainSourceFile:  '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/MainSrcFiles_placehold'
+Replacements:
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <oneapi/dpl/execution>\n#include <oneapi/dpl/algorithm>\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          18
+    Length:          0
+    ReplacementText: "\n#include <dpct/rng_utils.hpp>\n\n#include <dpct/dpl_utils.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          19
+    Length:          20
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          39
+    Length:          25
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          64
+    Length:          37
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          101
+    Length:          34
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          135
+    Length:          47
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          182
+    Length:          33
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          323
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          327
+    Length:          17
+    ReplacementText: 'dpct::rng::host_rng_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          398
+    Length:          54
+    ReplacementText: 'DPCT_CHECK_ERROR(gen = dpct::rng::create_host_rng(dpct::rng::random_engine_type::mcg59)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          452
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          488
+    Length:          42
+    ReplacementText: 'DPCT_CHECK_ERROR(gen->set_queue((dpct::queue_ptr)stream)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          530
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          559
+    Length:          48
+    ReplacementText: 'DPCT_CHECK_ERROR(gen->set_seed(1234ULL)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          607
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          655
+    Length:          41
+    ReplacementText: 'DPCT_CHECK_ERROR(gen->generate_uniform(d_buffer, num)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          696
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          734
+    Length:          27
+    ReplacementText: 'DPCT_CHECK_ERROR(gen.reset()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          761
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          780
+    Length:          21
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          873
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          1032
+    Length:          117
+    ReplacementText: 'dpct::sort(oneapi::dpl::execution::make_device_policy(*((dpct::queue_ptr)stream)), keys, keys + num, values)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Offset:          1167
+    Length:          20
+    ReplacementText: 'std::system_error'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash/sortGPU.cu'
+    Digest:          5ca945aad43c9b75c63b06a8931775af
+DpctVersion:     18.0.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/home/tcs2/vidya/openacc_tool/accelerator_interoperability/Hash'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CodePinEnabled:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           ''
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  HelperFuncPreferenceFlag:
+    Value:           '0'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  NoUseGenericSpace:
+    Value:           ''
+    Specified:       true
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

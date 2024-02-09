@@ -1,0 +1,24 @@
+* Line 25 contains the following statement
+#pragma acc data create(positions[0:length], keys[0:num], values[0:num])
+that has been as been translated into:
+#pragma omp target data map(alloc:positions[0:length],keys[0:num],values[0:num])
+
+
+* Line 28 contains the following statement
+#pragma acc host_data use_device(positions)
+that has been as been translated into:
+#pragma omp target update from(positions)
+
+
+* Line 34 contains the following statement
+#pragma acc parallel loop
+that has been as been translated into:
+#pragma omp target teams loop
+
+
+* Line 47 contains the following statement
+#pragma acc host_data use_device(keys, values)
+that has been as been translated into:
+#pragma omp target update from(keys,values)
+
+
