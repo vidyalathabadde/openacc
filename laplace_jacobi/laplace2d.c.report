@@ -1,0 +1,20 @@
+* Line 72 contains the following statement
+#pragma acc kernels
+that has been as been translated into:
+#pragma omp target
+* WARNING(s)! Please review the translation.
+  1. The kernels construct in OpenACC is a hint to the compiler of where it should look for parallelism. OpenMP does not have a direct translation for this construct.
+
+
+* Line 74 contains the following statement
+#pragma acc loop independent
+that has been as been translated into:
+#pragma omp loop order(concurrent)
+
+
+* Line 85 contains the following statement
+#pragma acc loop independent
+that has been as been translated into:
+#pragma omp loop order(concurrent)
+
+

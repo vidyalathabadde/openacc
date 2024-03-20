@@ -1,0 +1,47 @@
+******************************Native openacc code results****************
+
+Jacobi relaxation Calculation: 4096 x 4096 mesh
+    0, 0.250000
+  100, 0.002397
+  200, 0.001204
+  300, 0.000804
+  400, 0.000603
+  500, 0.000483
+  600, 0.000403
+  700, 0.000345
+  800, 0.000302
+  900, 0.000269
+ total: 0.419220 s
+
+
+
+**************************************migrated code results***************
+
+icx -fiopenmp -fopenmp-targets=spir64 test.c -DOPENACC2OPENMP_ORIGINAL_OPENMP=1 -o original
+u79759@s001-n188:~/vidya/openacc$ ./original 
+Jacobi relaxation Calculation: 4096 x 4096 mesh
+    0, 0.000000
+ total: 0.645600 s
+
+
+
+
+***************************************** results after commenting out the #pragma omp target line **********************************
+icx -fiopenmp -fopenmp-targets=spir64 test.c -DOPENACC2OPENMP_ORIGINAL_OPENMP=1
+u79759@s001-n188:~/vidya/openacc$ ./a.out 
+Jacobi relaxation Calculation: 4096 x 4096 mesh
+    0, 0.216410
+  100, 0.000620
+  200, 0.001043
+  300, 0.000569
+  400, 0.000157
+  500, 0.000341
+  600, 0.000349
+  700, 0.000333
+  800, 0.000213
+  900, 0.000190
+ total: 10.749501 s
+
+
+
+
